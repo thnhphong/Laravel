@@ -1,0 +1,143 @@
+body{
+    background: #f5f5fa;
+}
+*{
+    text-decoration: none;
+    color: black;
+}
+#book-slider{
+    display: flex;
+    flex-direction: row;
+    background: white;
+}
+.book-link{
+    height: 450px;
+}
+.book{
+    width: 150px;
+    height: 400px;
+}
+
+.title, .author {
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.title{
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.author{
+    height: 40px;
+}
+.rating{
+    margin: 0px 0px 10px 0px;
+    height: 20px;
+    background-color: none;
+    display: inline-flex;
+    align-items: flex-start;
+    font-size: 18px;
+    color: #DBDB3A;
+}
+.rating_price{
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+}
+.price{
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+}
+.favorite{
+    font-size: 18px;
+    border: none;
+    background: none;
+}
+.favorite:hover{
+    fill: #00ff11;
+    color: #00ff11;
+}
+.add{
+
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: inline-flex;
+    padding: 0px 20px;
+    font-size: 14px;
+    width: 78px;
+    height: 26px;
+    color: white;
+    background-color: #050043;
+}
+
+#searchInput{
+    background: white;
+    width: 300px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+#searchBtn{
+    width: 45px;
+    background: white;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+#searchBtn i{
+    background-color: white;
+    font-size: 15px;
+}
+.popup {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+.popup-content{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}

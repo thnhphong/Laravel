@@ -1,0 +1,252 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+outline: none;
+}
+:root{
+--purpleMain: #070B2D;
+--yellowBtn: #DFFF00;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    height: 70px;
+}
+.nav .nav-logo a{
+    color: white;
+    text-decoration: none;
+}
+.rounded-circle {
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+}
+.rounded-circle_blue{
+    background: linear-gradient(222deg, #222269 11.95%, rgba(28, 28, 161, 0.10) 99.74%);
+}
+.rounded-circle_red{
+    background: linear-gradient(140deg, #AF0000 10.09%, rgba(127, 0, 0, 0.13) 92.68%);
+}
+.nav-logo .text{
+    background: linear-gradient(268deg, #0603AE 4.54%, #9B0000 97.77%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.links{
+    list-style: none;
+    padding-top: 10px;
+}
+.nav-logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.nav-logo a {
+    gap: 0.1rem;
+    text-decoration: none;
+    color: inherit; /* Use the parent color */
+    display: flex;
+    align-items: center;
+}
+.nav-links .links a{
+    padding-top: 100px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.nav-links .links:hover a{
+    color: var(--yellowBtn);
+}
+.buttons{
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.input{
+    gap: 0.2rem;
+    display: flex;
+    position: relative;
+    list-style: none;
+    width: 300px;
+    padding-top: 10px;
+}
+#input-search{
+    border-radius: 15px;
+    border: none;
+    opacity: 0;
+    left: 0;
+    width: 0;
+    height: 30px;
+    outline: none;
+    transition: opacity 1s, width 1s;
+}
+#input-search.active{
+    opacity: 1;
+    width: 200px;
+}
+#input-search::placeholder{
+    padding-left: 5px;
+}
+#search-btn{
+    z-index: 2;
+    position: relative;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+.buttons button{
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.buttons button{
+    font-size: 18px;
+    width: 115px; 
+    height: 40px;
+    border-radius: 10px;
+}
+.buttons .login{
+    background-color: transparent;
+    color: white;
+}
+.buttons .signup{
+    background-color: var(--yellowBtn);
+}
+.container-main{
+    background-color: var(--purpleMain);
+    height: 500px;
+}
+
+.find-your-next-book h1{
+    margin-bottom: 5px;
+}
+.find-your-next-book{
+    color: white;
+}
+.find-your-next-book p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.find-your-next-book .kinds{
+    padding-top: 10px;
+}
+.explore-more{
+    font-size: 14px;
+    background-color: var(--yellowBtn);
+    min-width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+.books{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 350px;
+}
+.books button{
+    max-width: 100%;
+    padding: 5px 10px 5px 10px;
+    flex-shrink: 1;
+    border: 1px solid var(--yellowBtn);
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+}
+.books button:hover{
+    background:rgba(52, 52, 231, 0.1);
+}
+.col2{
+    min-width: 600px;
+    padding-top: 50px;
+    display: flex;
+}
+.book{
+    color: white;
+    margin: 10px;
+}
+.book:nth-child(odd) img{
+    border-radius: 100px 100px 0px 0px;
+}
+.book:nth-child(even) img{
+    border-radius: 0px 0px 100px 100px;
+}
+.book:nth-child(odd) p{
+    margin-top: 5px;
+}
+.book:nth-child(even) p{
+    margin-bottom: 5px;
+}
+.book:nth-child(even){
+    display: flex;
+    flex-direction: column-reverse;
+}
+.book p{
+    text-align: center;
+}
+.title{
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+.author{
+    font-size: 18px;
+}
+.buttons .login a{
+    color: white;
+}
+.buttons .signup a{
+    color: white;
+}
+
+.book-container{
+   display: flex;
+}
+.category-bar{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+.category-bar button{
+    width: 200px;
+    height: 50px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color:#f5f5fa;
+    border: none;
+    border-radius: 5px;
+}
+.category-bar button:hover{
+    background: white;
+}
+.category-dropdown{
+    display: flex;
+    flex-direction: column;
+}
+.category-dropdown button{
+    border: none;
+    background: #f5f5fa;
+}
+.category-dropdown button:hover{
+    background: white;
+}
+.category-bar-container{
+    position: relative;
+    flex-shrink: 0;
+}
+.category-bar{
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    background-color: #f5f5fa;
+}
